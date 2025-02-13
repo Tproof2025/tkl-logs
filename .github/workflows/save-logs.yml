@@ -1,1 +1,21 @@
+name: Save Logs
 
+on:
+  repository_dispatch:
+    types: [save-logs]
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Save logs
+        run: |
+          echo "${{ github.event.client_payload.logs }}" >> logs.txt
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add logs.txt
+          git commit -m "Update logs"
+          git push
