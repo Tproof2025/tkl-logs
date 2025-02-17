@@ -67,3 +67,18 @@ n
 a
 space
 
+ctrl
+c
+x
+c
+x
+c
+x
+c
+c
+x
+x
+c
+x
+c
+
