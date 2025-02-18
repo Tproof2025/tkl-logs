@@ -23,3 +23,16 @@ space
 ñ
 space
 
+backspace
+1
+0
+mayusculas
+:
+0
+0
+space
+c
+o
+n
+space
+
