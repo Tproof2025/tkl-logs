@@ -372,3 +372,6 @@ ctrl
 v
 enter
 
+ctrl
+c
+
