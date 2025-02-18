@@ -137,3 +137,5 @@ flecha izquierda
 flecha izquierda
 flecha abajo
 
+enter
+
