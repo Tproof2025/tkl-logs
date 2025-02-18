@@ -375,3 +375,8 @@ enter
 ctrl
 c
 
+s
+i
+e
+n
+
