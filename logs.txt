@@ -132,3 +132,8 @@ space
 
 enter
 
+flecha abajo
+flecha izquierda
+flecha izquierda
+flecha abajo
+
